@@ -1,0 +1,25 @@
+-
+  requests:
+    url: http://daluxmall.com/mobile/index.php?act=login&op=loginThreeWay
+    method: post
+    data:
+      -
+        password: 123456
+        device_id: 3EC1F3F3-29B5-4936-ABF3-D5AB9B9D04E4
+        loginType: isAccount
+        login_role: 1
+        client: android
+        lang_type: zh_cn
+        username: 回归
+      -
+        password: 1234560
+        device_id: 3EC1F3F3-29B5-4936-ABF3-D5AB9B9D04E4
+        loginType: isAccount
+        login_role: 1
+        client: android
+        lang_type: zh_cn
+        username: 华山
+  extract:
+    token: a1
+  assertion:
+    - equal: [b1,b 2]
